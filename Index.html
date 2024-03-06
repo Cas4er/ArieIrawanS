@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="Style.css" rel="stylesheet" type="text/css" />
+  <title>Kalkulator Sederhana</title>
+</head>
+<body>
+<div class="container">
+  <form action="" name="calc" class="calculator">
+    <input type="text" class="value" readonly id="result" />
+    <span class="num clear" onclick="calculator.clear()"><i>C</i></span>    
+    <span class="num delete" onclick="calculator.delete()"><i>Del</i></span>
+    <span class="num" onclick="calculator.append('/')"><i>/</i></span>
+    <span class="num" onclick="calculator.append('7')"><i>7</i></span>
+    <span class="num" onclick="calculator.append('8')"><i>8</i></span>
+    <span class="num" onclick="calculator.append('9')"><i>9</i></span>
+    <span class="num" onclick="calculator.append('*')"><i>*</i></span>
+    <span class="num" onclick="calculator.append('4')"><i>4</i></span>
+    <span class="num" onclick="calculator.append('5')"><i>5</i></span>
+    <span class="num" onclick="calculator.append('6')"><i>6</i></span>
+    <span class="num" onclick="calculator.append('-')"><i>-</i></span>
+    <span class="num" onclick="calculator.append('1')"><i>1</i></span>
+    <span class="num" onclick="calculator.append('2')"><i>2</i></span>
+    <span class="num" onclick="calculator.append('3')"><i>3</i></span>   
+    <span class="num plus" onclick="calculator.append('+')"><i>+</i></span>
+    <span class="num" onclick="calculator.append('0')"><i>0</i></span>
+    <span class="num" onclick="calculator.append('00')"><i>00</i></span>
+    <span class="num" onclick="calculator.append('.')"><i>.</i></span>
+    <span class="num" onclick="calculator.append('%')"><i>%</i></span>
+
+
+    <span class="num equal" onclick="calculator.calculate()"><i>=</i></span>
+  </form>
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>
